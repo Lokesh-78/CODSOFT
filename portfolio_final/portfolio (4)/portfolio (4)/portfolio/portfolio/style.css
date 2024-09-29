@@ -1,0 +1,350 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+   
+}
+body{
+    color: #ece1e1;
+    background-color:rgb(34, 34, 91);
+
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: transparent;
+    z-index: 100;
+    
+}
+.logo{
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+
+}
+.navbar a{
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .7s;
+    margin-left: 35px;
+    
+}
+.navbar a:hover{
+    color: aqua;
+}
+hr{
+    color: aqua;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 150px ;
+    align-items: center;
+    background-position: center;
+    padding: 50px 10% 0;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+.home-content{
+    max-width: 700;
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 0 1px #fff;
+}
+.home-content p{
+    font-size: 20px;
+}
+
+.home-sci a{
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid aqua;
+    border-radius: 50%;
+    color: aqua;
+    font-size: 20px;
+    background:transparent;
+    text-decoration: none;
+    margin: 30px 15px 30px 0px;
+}
+.home-sci a:hover{
+    color: #0e0e0e;
+    background-color: aqua;
+    box-shadow: 0 0 20px aqua;
+}
+.btn{
+    display: inline-block;
+    color: #0e0e0e;
+    padding: 12px 28px;
+    border-radius: 2rem;
+    font-size: 15px;
+    background: aqua;
+    letter-spacing: 1px;
+    text-decoration-line: none;
+   
+    font-weight: 600;
+}
+.btn a:hover{
+   
+    box-shadow: 0 0 10px cyan,0 0 25px cyan,0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+.btn .ag{
+    text-decoration: none;
+}
+
+.wavy{
+    position: relative;
+    --webkit-box-reflect: below -12px gray ;
+    
+}
+.wavy span{
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    font-weight: bolder;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1* var(--i));
+    
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+
+.wavy span:nth-child(1){
+    animation-delay: .1s;
+}
+.wavy span:nth-child(2){
+    animation-delay: .3s;
+}
+.wavy span:nth-child(3){
+    animation-delay: .5s;
+}
+.wavy span:nth-child(4){
+    animation-delay: .7s;
+}
+.wavy span:nth-child(5){
+    animation-delay: .9s;
+}
+.wavy span:nth-child(6){
+    animation-delay: .11s;
+}
+.wavy span:nth-child(7){
+    animation-delay: .16s;
+}
+.wavy span:nth-child(8){
+    animation-delay: .19s;
+}
+.wavy span:nth-child(9){
+    animation-delay: .23s;
+}
+
+.container{
+    display: inline-block;
+   
+}
+
+.text{
+    overflow: hidden;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: aqua;
+    white-space: nowrap;
+    animation: typing 4s steps(40,end) infinite;
+    filter:drop-shadow( 0 0 20px aqua);
+    
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 105%;
+    }
+}
+
+
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-section, .form-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.map-section iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.find-me-button {
+    display: block;
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.find-me-button:hover {
+    background-color: #2f7dd0;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section input, .form-section textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.send-button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(53, 88, 88);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: #218838;
+}
+
+
+body{
+    margin: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+a {
+    color:white; /* Aqua color */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+a:hover {
+
+    text-decoration: none; /* Underline effect */
+}
+
+.skills-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 40%;
+    align-items: center;
+    align-content: center;
+    margin-left: 20px;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+
+}
+
+.skills-cloud span {
+    font-size: 1.2rem;
+    margin: 5px 10px;
+    display: inline-block;
+    color: #00ffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer; /* Cursor change on hover */
+}
+
+/* Hover effect for skills cloud items */
+.skills-cloud span:hover {
+    transform: scale(1.1); /* Slightly increase size */
+    color: #ffffff; /* Change to white on hover */
+}
