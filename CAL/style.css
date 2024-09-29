@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#display {
+    background-color: #111;
+    color: #00ff00;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #666;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #ff9800;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.operator:hover {
+    background-color: #f57c00;
+}
+
+#equals {
+    background-color: #4caf50;
+    color: white;
+    grid-column: span 2;
+    transition: background-color 0.3s ease;
+}
+
+#equals:hover {
+    background-color: #388e3c;
+}
+
+#clear {
+    background-color: #f44336;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#clear:hover {
+    background-color: #d32f2f;
+}
+
+#delete {
+    background-color: #e91e63;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#delete:hover {
+    background-color: #c2185b;
+}
